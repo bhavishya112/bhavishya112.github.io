@@ -4,7 +4,7 @@
   /* --sans: "Helvetica Neue", Helvetica, Arial, sans-serif; */
   --sans:  "Times New Roman", serif , "Book Antiqua";
   /* --hand: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  --hand: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --hand: Consolas, sans-serif,"SFMono-Regular", "Liberation Mono", monospace;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --bg: #fdfdfd;
   --fg: #111;
@@ -34,7 +34,11 @@
 * { box-sizing: border-box; }
 body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
 body { font: 400 16px/1.55 var(--sans); color: var(--fg); background: var(--bg); -webkit-text-size-adjust: 100%; transition: background-color .15s ease, color .15s ease; }
-:root[data-font="hand"] body { font-family: var(--hand); font-size: 19px; }
+:root[data-font="hand"] body { font-family: var(--hand); font-size: 15px; line-height: 1.5; }
+:root[data-font="hand"] h1,
+:root[data-font="hand"] h2,
+:root[data-font="hand"] h3 { letter-spacing: -0.02em; }
+
 h1, h2, h3, p, ul { margin-bottom: 15px; }
 img { max-width: 100%; vertical-align: middle; }
 a { color: var(--accent); text-decoration: none; }
@@ -92,7 +96,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
 
 .page-content { padding: 40px 0; min-height: 60vh; }
 .profile { display: flex; align-items: center; justify-content: center; gap: 25px; margin-bottom: 34px; }
-.profile-photo { width: 160px; height: 160px; object-fit: cover; border-radius: 50%; }
+.profile-photo { width: 160px; height: 160px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
+
 .small { font-size: 15px; }
 .intro-text { font-size: 18px; margin-bottom: 25px; }
 .about-text { max-width: 720px; font-size: 17px; line-height: 1.65; }
@@ -196,7 +201,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
   .nav-utility { justify-content: center; }
   .page-content { padding: 30px 0; }
   .profile { flex-direction: column; text-align: center; }
-  .profile-photo { width: 140px; height: 140px; }
+  .profile-photo { width: 140px; height: 140px; flex-shrink: 0; }
+
   .intro-text { font-size: 16px; }
   .item { grid-template-columns: 125px 1fr; gap: 16px; padding-left: 0; padding-right: 0; }
   .item-thumb { width: 125px; height: 90px; }
