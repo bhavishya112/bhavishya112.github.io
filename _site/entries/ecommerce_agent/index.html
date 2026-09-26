@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2b2b2b">
+  <script>
+  (function () {
+    try {
+      var mode = 'auto';
+      var storedTheme = localStorage.getItem('theme');
+      var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      var theme = mode === 'auto' ? (storedTheme || systemTheme) : mode;
+
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('data-theme-mode', mode);
+
+      var storedBackground = localStorage.getItem('bg-pattern');
+      var defaultBackground = 'grid';
+      if (storedBackground || defaultBackground !== 'none') {
+        document.documentElement.setAttribute('data-bg', storedBackground || defaultBackground);
+      }
+
+      var storedFont = localStorage.getItem('font-style');
+      var defaultFont = 'default';
+      if ((storedFont || defaultFont) === 'hand') {
+        document.documentElement.setAttribute('data-font', 'hand');
+      }
+    } catch (error) {}
+  })();
+</script>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+  
+<link rel="stylesheet" href="/css/style.css?v=1791138600">
+<link rel="stylesheet" href="/css/clean-layout.css?v=1791138600">
+<style>:root { --accent-base: #2b2b2b; }</style>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Ecommerce Customer Support Agent | Bhavishya Sharma</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Ecommerce Customer Support Agent" />
+<meta name="author" content="Bhavishya Sharma" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An AI Agent to be hosted on e-commerce sites to help users find products, orders or general navigation." />
+<meta property="og:description" content="An AI Agent to be hosted on e-commerce sites to help users find products, orders or general navigation." />
+<link rel="canonical" href="https://bhavishya112.github.io/entries/ecommerce_agent/" />
+<meta property="og:url" content="https://bhavishya112.github.io/entries/ecommerce_agent/" />
+<meta property="og:site_name" content="Bhavishya Sharma" />
+<meta property="og:image" content="https://bhavishya112.github.io/images/projects/example-project/cover.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-06-15T00:00:00+05:30" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://bhavishya112.github.io/images/projects/example-project/cover.svg" />
+<meta property="twitter:title" content="Ecommerce Customer Support Agent" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bhavishya Sharma"},"dateModified":"2026-06-15T00:00:00+05:30","datePublished":"2026-06-15T00:00:00+05:30","description":"An AI Agent to be hosted on e-commerce sites to help users find products, orders or general navigation.","headline":"Ecommerce Customer Support Agent","image":"https://bhavishya112.github.io/images/projects/example-project/cover.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://bhavishya112.github.io/entries/ecommerce_agent/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bhavishya112.github.io/images/profile.svg"},"name":"Bhavishya Sharma"},"url":"https://bhavishya112.github.io/entries/ecommerce_agent/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="https://bhavishya112.github.io/feed.xml" title="Bhavishya Sharma" />
+  
+  
+  <meta property="og:image" content="https://bhavishya112.github.io/images/projects/example-project/cover.svg">
+  <meta name="twitter:image" content="https://bhavishya112.github.io/images/projects/example-project/cover.svg">
+  
+  
+
+
+  
+<link rel="alternate" hreflang="en" href="https://bhavishya112.github.io/entries/ecommerce_agent/">
+
+
+<link rel="alternate" hreflang="x-default" href="https://bhavishya112.github.io/">
+  
+</head>
+<body>
+  
+
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Bhavishya Sharma</a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-open-label="Open menu" data-close-label="Close menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <div class="nav-links">
+        
+        
+        
+        
+          
+          
+          
+          
+          <a class="page-link" href="/">Home</a>
+        
+          
+          
+          
+          
+          <a class="page-link" href="/about/">About</a>
+        
+          
+          
+          
+          
+          <a class="page-link" href="/work/">Projects</a>
+        
+          
+          
+          
+          
+          
+        
+          
+          
+          
+          
+          <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="mailto:bhavishyasharma675@gmail.com">Contact</a>
+        <a class="page-link nav-cv" href="/files/BHAVISHYA_SHARMA.pdf">CV</a>
+      </div>
+      <div class="nav-utility">
+        <div class="lang-switch">
+          
+            
+          
+        </div>
+        <button type="button" class="bg-toggle" aria-label="Change background pattern">
+          <svg class="icon-bg-none" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+          <svg class="icon-bg-grid" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+          <svg class="icon-bg-dots" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" stroke="none" aria-hidden="true"><circle cx="8" cy="8" r="1.4"/><circle cx="16" cy="8" r="1.4"/><circle cx="8" cy="16" r="1.4"/><circle cx="16" cy="16" r="1.4"/><circle cx="12" cy="12" r="1.4"/></svg>
+        </button>
+        <button type="button" class="font-toggle" aria-label="Toggle handwritten font">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </button>
+        <button type="button" class="theme-toggle" aria-label="Switch between light and dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l1.41 1.41"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main class="page-content">
+    <div class="wrapper">
+<link rel="stylesheet" href="/css/case-study.css?v=1791138600">
+
+
+
+
+
+
+<article class="content-page case-study-page">
+  <header class="case-study-header">
+    <p class="post-date">CASE STUDY 2026</p>
+    
+      <figure class="case-study-cover">
+        <img class="project-hero" src="/images/projects/ecommerce/cover.png" alt="Placeholder cover image for the example project">
+      </figure>
+    
+    <h1 class="page-title">Ecommerce Customer Support Agent</h1>
+    <p class="page-intro">An AI Agent to be hosted on e-commerce sites to help users find products, orders or general navigation.</p>
+    <p class="item-tags">LangChain, Agentic AI, RAG, TAG, HTML-CSS-JS</p>
+    
+      <div class="case-study-actions">
+        <a class="case-study-button primary" href="https://github.com/bhavishya112/Ecommerce-Customer-Support-Agent" target="_blank" rel="noopener">Code ↗</a>
+        
+        
+      </div>
+    
+  </header>
+  <div class="article-content"><h2 id="problem">Problem</h2>
+
+<p>Over time I noticed 2 problems with many Ecommerce Sites.
+1) Users spend a lot of time just to search, filter and know more details of a particular product.
+2) In case the UX of a Site is Bad, user gets frustrated on not being able to find things.</p>
+
+<h2 id="approach">Approach</h2>
+
+<p>I would be explaining the project wrt to above 2 problems, there are yet many details uncovered because otherwise it would get too long.</p>
+
+<h3 id="problem-1">Problem 1</h3>
+
+<!-- Describe what you built and the key decisions along the way. This is a good place for a diagram, a code snippet, or a short list of the technologies involved. -->
+<p>So for Problem 1 : I had a clear thought, interact with Database. But How?<br />
+<strong>There were 2 approaches:</strong><br /> - I could use pre-baked queries, wrap them in tools, and connect it with my agent.<br /> - Or i could let the Agent build Queries by itself.<br /><br />
+I went with former approach, since for latter I’d need to put extra logic to prevent worst case scenarios, and implement an episodic memory to prevent wrong paths.<br /></p>
+<blockquote>
+  <p>What engineering if you can’t make it simple &amp; useful right?</p>
+</blockquote>
+
+<p>so I implemented a function search_products() which takes an arg Query and returns Rows.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Query = 
+    {
+        "name":string,
+        "category":string,
+        "price": [
+        {
+            "operator" : ["lt","gt","et"],
+            "value" : float
+        }],
+        "supplier" : "string"
+    }
+
+    Returns:
+        (name,category,price,supplier) tuples
+</code></pre></div></div>
+
+<p>So basically, I had a base sql query, and i’d appended parameters/filters in it based on the json query recieved.</p>
+
+<p><strong>Then I had my next problem</strong> : “What if user provides wrong product name or brand?”<br />
+At this moment i thought of vector search, because static algorithms like dictionary + substring matching would make it complicated to implement, plus it wouldn’t work with extra context like “which notebook? laptop or a simple notebook with pages?”<br />
+So i connected Qdrant, made a script to cache collections : ProductName &lt;-&gt; ProductName + Category, Category &lt;-&gt; Category and Supplier &lt;-&gt; Supplier.</p>
+
+<p>Then I made a pipeline which would correct ProductName, Category and Supplier before putting them into sql query, so that we don’t miss the data.</p>
+
+<p>And it worked.</p>
+
+<p>The remaining thing is pagination, I didn’t paginate the rows, that would be in future releases.</p>
+
+<h3 id="problem-2">Problem 2</h3>
+<p>For asking the agent “where is this ui element”, it must have access to those ui elements in a structured manner and in a way so that we can differentiate say one button from another button.</p>
+
+<p><strong>Initially</strong> i thought of <strong>Aria-Labels</strong>, using js (Playwright) why not just retrieve all distinct elements with their Aria-Labels explaining what are they really -&gt; Cache them -&gt; Retrieve through a <strong>RAG pipeline</strong>.
+<strong>But this Approach had some major problems</strong> : <br /></p>
+<ol>
+  <li>Many elements like div, are not supported by Aria, so you wouldn’t be able to find say a kpi card.</li>
+  <li>Not every website is fully accessible with respect to Aria, which means we’d have to enhance those websites just to make sure our tool works.</li>
+</ol>
+
+<p><strong>So i thought maybe GraphRAG</strong>???…but i was not sure how would i be able to connect different entities + it would complicate things a lot.
+<strong>So finally i thought of simple RAG, with chunking.</strong></p>
+
+<p>The Idea was Simple : Retrieve the DOM Tree, Flatten it and Cache into a vectorDB.
+so I made a script to cache the DOM Tree into vectorDB and embedded a field <strong>pagename</strong> to relate an element with its global html page [because its simple RAG], and a function <code class="language-plaintext highlighter-rouge">query_ui()</code> to retrieve the relavant info [with top-k chunks &amp; a threshold of 0.5].<br />
+These are all details that im feeding in as documents :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> rows.append(
+     {
+         "id": str(uuid.uuid4()),
+         "page": page,
+         "description": description,
+         "label": label,
+         "text": own_text,
+         "position": node.get("position"),
+         "type": node.get("role"),
+         "color": color_readable(node.get("color")),
+         "size_cm": node.get("size"),
+         "view": view,
+         # "state": None,  # no AJAX/state discovery in the new scraper
+         "full_text": (node.get("text") or "")[:FULL_TEXT_TRUNCATE],
+         "visible": node.get("visible"),
+         # "path": current_path,
+         # "tag": node.get("tagName"),
+         # closest analogue to the old "type" field
+         # "element_id": node.get("id"),
+         # "class_name": node.get("className"),
+         # "selector": _pseudo_selector(node),
+         # not provided by the new scraper
+     }
+ )
+</code></pre></div></div>
+
+<p>and these are the details that im actually embedding as vectors [for best relevance] :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>documents.append(
+    f"{r['page']} :\nlabel : {r['label']},text : {r['full_text'][:20]},color : {r['color']}".strip())
+
+</code></pre></div></div>
+<p>However, im still thinking of evaluating the performance for retrieval, that would be in future releases.</p>
+
+<p>but since the project was based on Playwright, and i couldn’t think of dynamically clicking different buttons to retrieve differently rendered components, i had to <strong>Compromise</strong> modal components and step-by-step Ajax interactions like Select Product -&gt; Fill Address Details -&gt; Payment -&gt; Order.
+Maybe i’d solve this problem in future releases.</p>
+
+<p>SOME APPROXIMATIONS:</p>
+<ol>
+  <li>Because we’re caching the details once, we can’t take ui elements rendered at different desktop/mobile devices, so i took average desktop/mobile resolutions to handle this problem.</li>
+  <li>Because everyone doesn’t know 100s of shades of colors, im approximating all different color shades into 20 different shades. I did that using minimum euclidean distance.</li>
+  <li>Because it would be irrelevant for user to know “order button is at coordinates (1200px,500px)”, i segregated a page into 9 sections - top-left, top-center, top-right, middle-left and so on [based on full html page size, not on your screen size].</li>
+</ol>
+
+<p>ALTERNATE APPROACH:<br />
+One approach could have been that would be much simpler - just document every webpage into a manual [like many websites do], and embed different sections of that manual into a RAG pipeline to retrieve for later, but the major drawback is its not automated, you’d have to either do it by hand or using some LLM [with human in the loop].</p>
+
+<h2 id="result">Result</h2>
+
+<!-- Describe the outcome: what changed, what you measured, or what you learned. -->
+<p>The result was a fully-fledged AI Agent through which you can find out whatever the store has to offer you, get your latest order information, know where is a particular element located, or just get latest products knowledge through internet.</p>
+
+<p>I learned a lot about Agentic Systems and State Management through this project, starting with a basic chatbot, it has come a lot far, but will go further.</p>
+
+<hr />
+<!-- 
+Delete this file (and its `it.md` translation) once you've added your own projects, or keep it around as a reference for the front matter fields. -->
+</div>
+  
+</article></div>
+  </main>
+  
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <h2 class="footer-heading">Bhavishya Sharma</h2>
+    <div class="footer-columns">
+      <ul><li><a href="mailto:bhavishyasharma675@gmail.com">bhavishyasharma675@gmail.com</a></li><li>© 2026</li></ul>
+      <ul class="footer-links"><li><a href="https://github.com/bhavishya112">GitHub</a></li><li><a href="https://www.linkedin.com/in/bhavishya-x">LinkedIn</a></li><li><a class="footer-cv" href="/files/BHAVISHYA_SHARMA.pdf">CV</a></li></ul>
+    </div>
+  </div>
+</footer>
+  
+<script src="/js/theme.js?v=1791138600" defer></script>
+<script src="/js/background.js?v=1791138600" defer></script>
+<script src="/js/font.js?v=1791138600" defer></script>
+<script src="/js/nav.js?v=1791138600" defer></script>
+</body>
+</html>

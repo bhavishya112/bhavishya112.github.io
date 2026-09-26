@@ -2,7 +2,7 @@
   --accent-base: #00008b;
   --accent: var(--accent-base);
   /* --sans: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  --sans:  "Times New Roman", serif , "Book Antiqua";
+  --sans:  serif,"Times New Roman", "Book Antiqua";
   /* --hand: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   --hand: Consolas, sans-serif,"SFMono-Regular", "Liberation Mono", monospace;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;

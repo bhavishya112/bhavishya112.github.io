@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2b2b2b">
+  <script>
+  (function () {
+    try {
+      var mode = 'auto';
+      var storedTheme = localStorage.getItem('theme');
+      var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      var theme = mode === 'auto' ? (storedTheme || systemTheme) : mode;
+
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('data-theme-mode', mode);
+
+      var storedBackground = localStorage.getItem('bg-pattern');
+      var defaultBackground = 'grid';
+      if (storedBackground || defaultBackground !== 'none') {
+        document.documentElement.setAttribute('data-bg', storedBackground || defaultBackground);
+      }
+
+      var storedFont = localStorage.getItem('font-style');
+      var defaultFont = 'default';
+      if ((storedFont || defaultFont) === 'hand') {
+        document.documentElement.setAttribute('data-font', 'hand');
+      }
+    } catch (error) {}
+  })();
+</script>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+  
+<link rel="stylesheet" href="/css/style.css?v=1791138600">
+<link rel="stylesheet" href="/css/clean-layout.css?v=1791138600">
+<style>:root { --accent-base: #2b2b2b; }</style>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Youtube Comment Analyser | Bhavishya Sharma</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Youtube Comment Analyser" />
+<meta name="author" content="Bhavishya Sharma" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A web based app that analyses youtube comments and related metadata to come up with a dashboard containing key insights." />
+<meta property="og:description" content="A web based app that analyses youtube comments and related metadata to come up with a dashboard containing key insights." />
+<link rel="canonical" href="https://bhavishya112.github.io/entries/youtube_comment_analyser/" />
+<meta property="og:url" content="https://bhavishya112.github.io/entries/youtube_comment_analyser/" />
+<meta property="og:site_name" content="Bhavishya Sharma" />
+<meta property="og:image" content="https://bhavishya112.github.io/images/projects/youtube/cover.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-07-15T00:00:00+05:30" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://bhavishya112.github.io/images/projects/youtube/cover.png" />
+<meta property="twitter:title" content="Youtube Comment Analyser" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bhavishya Sharma"},"dateModified":"2026-07-15T00:00:00+05:30","datePublished":"2026-07-15T00:00:00+05:30","description":"A web based app that analyses youtube comments and related metadata to come up with a dashboard containing key insights.","headline":"Youtube Comment Analyser","image":"https://bhavishya112.github.io/images/projects/youtube/cover.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bhavishya112.github.io/entries/youtube_comment_analyser/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bhavishya112.github.io/images/profile.svg"},"name":"Bhavishya Sharma"},"url":"https://bhavishya112.github.io/entries/youtube_comment_analyser/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="https://bhavishya112.github.io/feed.xml" title="Bhavishya Sharma" />
+  
+  
+  <meta property="og:image" content="https://bhavishya112.github.io/images/projects/youtube/cover.png">
+  <meta name="twitter:image" content="https://bhavishya112.github.io/images/projects/youtube/cover.png">
+  
+  
+
+
+  
+<link rel="alternate" hreflang="en" href="https://bhavishya112.github.io/entries/youtube_comment_analyser/">
+
+
+<link rel="alternate" hreflang="x-default" href="https://bhavishya112.github.io/">
+  
+</head>
+<body>
+  
+
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Bhavishya Sharma</a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-open-label="Open menu" data-close-label="Close menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <div class="nav-links">
+        
+        
+        
+        
+          
+          
+          
+          
+          <a class="page-link" href="/">Home</a>
+        
+          
+          
+          
+          
+          <a class="page-link" href="/about/">About</a>
+        
+          
+          
+          
+          
+          <a class="page-link" href="/work/">Projects</a>
+        
+          
+          
+          
+          
+          
+        
+          
+          
+          
+          
+          <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="mailto:bhavishyasharma675@gmail.com">Contact</a>
+        <a class="page-link nav-cv" href="/files/BHAVISHYA_SHARMA.pdf">CV</a>
+      </div>
+      <div class="nav-utility">
+        <div class="lang-switch">
+          
+            
+          
+        </div>
+        <button type="button" class="bg-toggle" aria-label="Change background pattern">
+          <svg class="icon-bg-none" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+          <svg class="icon-bg-grid" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+          <svg class="icon-bg-dots" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" stroke="none" aria-hidden="true"><circle cx="8" cy="8" r="1.4"/><circle cx="16" cy="8" r="1.4"/><circle cx="8" cy="16" r="1.4"/><circle cx="16" cy="16" r="1.4"/><circle cx="12" cy="12" r="1.4"/></svg>
+        </button>
+        <button type="button" class="font-toggle" aria-label="Toggle handwritten font">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </button>
+        <button type="button" class="theme-toggle" aria-label="Switch between light and dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l1.41 1.41"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main class="page-content">
+    <div class="wrapper">
+<link rel="stylesheet" href="/css/case-study.css?v=1791138600">
+
+
+
+
+
+
+<article class="content-page case-study-page">
+  <header class="case-study-header">
+    <p class="post-date">CASE STUDY 2026</p>
+    
+      <figure class="case-study-cover">
+        <img class="project-hero" src="/images/projects/youtube/cover.png" alt="Placeholder cover image for the example project">
+      </figure>
+    
+    <h1 class="page-title">Youtube Comment Analyser</h1>
+    <p class="page-intro">A web based app that analyses youtube comments and related metadata to come up with a dashboard containing key insights.</p>
+    <p class="item-tags">DBSCAN Clustering, BERTopic, Streamlit, Pandas, Plotly</p>
+    
+      <div class="case-study-actions">
+        <a class="case-study-button primary" href="https://github.com/bhavishya112/Youtube-Comment-Analyser" target="_blank" rel="noopener">Code ↗</a>
+        
+        
+      </div>
+    
+  </header>
+  <div class="article-content"><h2 id="problem">Problem</h2>
+
+<p>Whenever i watched a youtube video, i got a curiosity like “what are people saying about this video, what is their opinion”, and scrolling through all the comments would take a lot of time + it was not accurate enough, so i thought what if i can come up with an automated system which would cover all comments in no time.</p>
+
+<h2 id="approach">Approach</h2>
+
+<!-- Describe what you built and the key decisions along the way. This is a good place for a diagram, a code snippet, or a short list of the technologies involved. -->
+
+<p>So,<strong>my original idea was to</strong> pull out all the separate topics from the comments, and make sort of a bar graph to know which topics have how many comments.
+To achieve this, <strong>i thought there must be some kind of clustering</strong>, and comments can be represented using vector embeddings.
+<strong>Then i thought of K-means clustering</strong>, but the major issue was that you don’t have predifined topics in youtube comments, there can be 5 or 50 topics, it depends on factors like quantity of comments, cultural diversity, and content.
+<br /><br />
+<strong>So finally, i thought of DBSCAN clustering</strong> , which would dynamically group all comments in distinct clusters (topics), and with the feature that each comment gets a distinct topic.
+So i landed at BERTopic Framework, which had a pipeline from preprocessing to topic modelling for this task, and used UMAP <strong>[currently]</strong> for dimensionality reduction, since running DBSCAN on all 384 dimensions would have <strong>“dimensional curse”</strong>. <strong>The problem with UMAP algorithm is that it doesn’t account for global view of data points</strong>, so intra-cluster arrangement is good, but inter-cluster arrangement might not be good, <strong>which might cause two semantically different topics to be close to each other i.e. similar in the reduced space.</strong></p>
+
+<p>However, in future releases, i’d changed this flow to use Cosine similarity instead of Euclidean distance, because that’s more natural for vectors, but for that i’d have to actually evaluate if things are getting better or not.</p>
+
+<p>For frontend, i used Streamlit because that would save my time since i don’t have much knowledge of js.</p>
+
+<p>So the basic idea was to retrieve topics [Bertopic + local LLM], calculate all required dataframe or dictionary variables, and come up with visualizations, the whole project depends on topic modelling since if you know what topics are talked about and correctly cluster them, you can know how many people are liking you, disliking you, what people think over time, what kind of audience do you have, etc, so i explained the whole approach.</p>
+
+<p>I first laid the foundation of topic modelling, then i did some permutations and combinations on the “calculating variables” part, then i came up with some visualizations that would present those in a meaningful way.</p>
+
+<p>I used plotly because that was modern, and interactible, however it was also a little bit bugged.</p>
+
+<p>THINGS THAT I KEPT IN MIND :<br />
+(1) Dashboard cards should follow Z pattern for utmost visiblity and clear heirarchy.<br />
+(2) Each Color and its values have meaning, for example, Green color has its meaning, but if we make it less saturated that makes it less catchy to eyes and consequently less important, this is the same thing i did with the hate part in the pie chart.<br /></p>
+
+<!-- But only one graph wouldn't be enough for making a dashboard, so i asked chatgpt **"What more can i do?"**, then it came up with  -->
+
+<h2 id="result">Result</h2>
+
+<!-- Describe the outcome: what changed, what you measured, or what you learned. -->
+<p>The Result was a Web-based AI app where you just give it the youtube url, and it would analyse it in minutes and Present it to you in the form of a nice looking dashboard.</p>
+
+<h2 id="future-scope">Future Scope</h2>
+<p>Future releases would be focussing on :<br />
+(1) Optimizing topic modelling &amp; insights generation.[lets see if we can use lighter models or just LSTMS]<br />
+(2) Adding Login-Logout.<br />
+(3) Saving the Analysis Results in a Database + coming up with Updation logic [if time gap is large enough].<br /></p>
+
+<hr />
+<!-- 
+Delete this file (and its `it.md` translation) once you've added your own projects, or keep it around as a reference for the front matter fields. -->
+</div>
+  
+</article></div>
+  </main>
+  
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <h2 class="footer-heading">Bhavishya Sharma</h2>
+    <div class="footer-columns">
+      <ul><li><a href="mailto:bhavishyasharma675@gmail.com">bhavishyasharma675@gmail.com</a></li><li>© 2026</li></ul>
+      <ul class="footer-links"><li><a href="https://github.com/bhavishya112">GitHub</a></li><li><a href="https://www.linkedin.com/in/bhavishya-x">LinkedIn</a></li><li><a class="footer-cv" href="/files/BHAVISHYA_SHARMA.pdf">CV</a></li></ul>
+    </div>
+  </div>
+</footer>
+  
+<script src="/js/theme.js?v=1791138600" defer></script>
+<script src="/js/background.js?v=1791138600" defer></script>
+<script src="/js/font.js?v=1791138600" defer></script>
+<script src="/js/nav.js?v=1791138600" defer></script>
+</body>
+</html>

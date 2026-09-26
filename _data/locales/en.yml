@@ -15,7 +15,7 @@ navigation:
 
 about:
   - "I'm a final year Btech undergraduate, focused on Data Science, Machine Learning and AI Applications."
-  - "My work spans Data Science, Deep Learning, and Agentic AI. I'm particularly interested in Developing AI Applications & Research"
+  - "My work spans Data Science, Deep Learning, and Agentic AI. I'm particularly interested in Developing AI Applications & Research."
   - "Here you'll find a selection of the projects and articles I've worked on."
 
 about_page:
@@ -28,24 +28,27 @@ about_page:
         # - "Replace this with a paragraph about your education, career path, or how you got started. Keep it to two or three sentences."
         # - "This second paragraph can add more detail: what you studied, where you've worked, or what shaped how you approach your field."
         - "I did my schooling from Kendriya Vidyalaya No.6, Jaipur, then right afterwards in 2023, I started my Btech at Poornima University."
-        - "In initial days of my college, I saw a 3Blue1Brown video on how a Neural Network can differentiate between 0-9 digits, that inspired me for years to come."
         - "I have also Interned at ASD Cybersecurity as an AI & Automation intern where I gained hands-on experience building AI-driven applications."
+        - "<blockquote><p>In initial days of my college, I saw a 3Blue1Brown video on how a Neural Network can differentiate between 0-9 digits, that inspired me for years to come.</p></blockquote>"
 
     - title: "What I work on"
       paragraphs:
         # - "Describe the areas you focus on day to day: the kind of problems, technologies, or research questions you spend most of your time on."
         # - "Add a second paragraph if you want to go into more depth about a specific interest or specialization."
         - "I work on building intelligent systems that can learn from data, understand complex information, and automate real-world tasks. My work spans ai agents,
-         machine learning, natural language processing, computer vision, and software development."
+          machine learning, natural language processing, computer vision, and software development."
         - "I’m particularly interested in how AI systems can move beyond making predictions to reasoning, using tools, and adapting to different
-         situations. I enjoy experimenting, failing, and coming up with creative ideas that are turned into practical applications."
+          situations. I enjoy experimenting, failing, and coming up with creative ideas that are turned into practical applications."
 
     - title: "How I approach projects"
       paragraphs:
         # - "Describe your working style or values: what you optimize for, how you make decisions, or what a collaborator should expect from you."
-        - "Whenever im building a project:<br> 1) Initially i evaluate the techstack that might be required<br> 2) Learn the Underlying concepts<br>
-         3) Start solving the problem following a Top-Down approach starting with breaking down it in broad areas<br> Core Ethos : Find Simple solutions to Complicated problems, Be Curious, Be Creative "
-  
+        - "Whenever im building a project:<br> 
+          1) Initially i evaluate the techstack that might be required<br> 
+          2) Learn the Underlying concepts<br>
+          3) Start solving problem following a Top-Down approach starting with breaking down it in broad areas<br> 
+          
+          Core Ethos : Find Simple solutions to Complicated problems, Be Curious, Be Creative "
 
 home:
   about_title: "About"
