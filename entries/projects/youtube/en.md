@@ -13,7 +13,7 @@ cover: "/images/projects/youtube/cover.png"
 cover_alt: "Placeholder cover image for the example project"
 thumbnail_alt: "Placeholder thumbnail for the example project"
 label: "PROJECT"
-role: "AIML & FullStack"
+role: "AIML & FullStack Development"
 technologies: [DBSCAN Clustering, BERTopic, Streamlit, Pandas, Plotly]
 code: "https://github.com/bhavishya112/Youtube-Comment-Analyser"
 demo: ""

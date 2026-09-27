@@ -13,7 +13,7 @@ cover: "/images/projects/traffic/architecture.png"
 cover_alt: "Placeholder cover image for the example project"
 thumbnail_alt: "Placeholder thumbnail for the example project"
 label: "PROJECT"
-role: "ML & Data Science"
+role: "ML Developement and Data Science"
 technologies: [CNN, Computer Vision, Tensorflow, OpenCV, Python ]
 code: "https://github.com/bhavishya112/GoogLeNet-IMAGE-CLASSIFICATION"
 demo: ""

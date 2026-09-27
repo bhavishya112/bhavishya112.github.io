@@ -13,7 +13,7 @@ cover: "/images/projects/ecommerce/cover.png"
 cover_alt: "Placeholder cover image for the example project"
 thumbnail_alt: "Placeholder thumbnail for the example project"
 label: "PROJECT"
-role: "AI & Full Stack"
+role: "AI Agent and FullStack Development"
 technologies: [LangChain, Agentic AI, RAG, TAG, HTML-CSS-JS]
 code: "https://github.com/bhavishya112/Ecommerce-Customer-Support-Agent"
 demo: ""

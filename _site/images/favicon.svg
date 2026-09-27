@@ -1,15 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <style>
-    .bg { fill: #fdfdfd; }
-    .fg { fill: #111111; }
-    @media (prefers-color-scheme: dark) {
-      .bg { fill: #15171a; }
-      .fg { fill: #e8e8e8; }
-    }
-  </style>
-  <rect class="bg" width="64" height="64" rx="14"/>
-  <circle class="fg" cx="22" cy="22" r="5"/>
-  <circle class="fg" cx="42" cy="22" r="5"/>
-  <circle class="fg" cx="22" cy="42" r="5"/>
-  <circle class="fg" cx="42" cy="42" r="5"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><style
+       id="style1">
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style></defs><g
+     id="layer1"><g
+       id="g1"
+       transform="matrix(0.26458333,0,0,0.26458333,0.24116955,0.02524922)"
+       style="opacity:1"><rect
+         style="opacity:1;fill:#212121;fill-opacity:1;stroke-width:0.999999"
+         id="rect1"
+         width="549.75421"
+         height="536.50714"
+         x="-18.132723"
+         y="-9.3683929" /><g
+         id="g2"
+         style="opacity:1;fill:#ffffff;fill-opacity:1"
+         transform="matrix(1.4450577,0,0,1.3834451,-133.56834,-95.510334)"><path
+           d="m 405.02132,388.87558 c 9.08709,-30.05591 -44.22676,-42.93809 -46.36498,-9.70426 -2.47323,38.42019 39.72546,31.67051 46.36498,9.70426 z"
+           id="path4"
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1.50898" /><path
+           d="m 220.90244,245.82754 188.3964,-2.47696 -165,161 h -88 l 26,-15 58,-2 126,-128 -144.38674,2.2643"
+           id="path3"
+           style="fill:#ffffff;fill-opacity:1" /><path
+           d="m 194.94061,131.73564 c 0,0 -24.71377,5.04194 -41.64177,0.61494 -15.51,-4.057 -16,-13 -16,-13 21.58311,1.43229 43.16782,2.1487 64.75388,2.39157 7.70108,0.0866 15.40234,0.11302 23.10376,0.0901 47.70886,-0.14178 95.42387,-2.17431 143.14236,-3.48167 l -121,130 22,-1 144,-145 -191,3 h -114 l 40,42"
+           id="path2"
+           style="fill:#ffffff;fill-opacity:1" /><path
+           d="m 206.32567,391.79871 0.9256,-274.98485 17.58404,1.16837 -2.79318,274.55978"
+           id="path1"
+           style="fill:#ffffff;fill-opacity:1" /></g></g></g></svg>
