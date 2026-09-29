@@ -13,7 +13,7 @@ cover: "/images/projects/youtube/cover.png"
 cover_alt: "Placeholder cover image for the example project"
 thumbnail_alt: "Placeholder thumbnail for the example project"
 label: "PROJECT"
-role: "AIML & FullStack Development"
+role: "AIML & FULLSTACK DEVELOPMENT"
 technologies: [DBSCAN Clustering, BERTopic, Streamlit, Pandas, Plotly]
 code: "https://github.com/bhavishya112/Youtube-Comment-Analyser"
 demo: ""
@@ -47,8 +47,8 @@ I first laid the foundation of topic modelling, then i did some permutations and
 I used plotly because that was modern, and interactible, however it was also a little bit bugged.
 
 THINGS THAT I KEPT IN MIND :<br>
-(1) Dashboard cards should follow Z pattern for utmost visiblity and clear heirarchy.<br>
-(2) Each Color and its values have meaning, for example, Green color has its meaning, but if we make it less saturated that makes it less catchy to eyes and consequently less important, this is the same thing i did with the hate part in the pie chart.<br>
+<span>1. Dashboard cards should follow Z pattern for utmost visiblity and clear heirarchy.</span><br>
+<span>2. Each Color and its values have meaning, for example, Green color has its meaning, but if we make it less saturated that makes it less catchy to eyes and consequently less important, this is the same thing i did with the hate part in the pie chart.</span><br>
 
 
 
@@ -61,9 +61,9 @@ The Result was a Web-based AI app where you just give it the youtube url, and it
 
 ## Future Scope
 Future releases would be focussing on :<br>
-(1) Optimizing topic modelling & insights generation.[lets see if we can use lighter models or just LSTMS]<br>
-(2) Adding Login-Logout.<br>
-(3) Saving the Analysis Results in a Database + coming up with Updation logic [if time gap is large enough].<br>
+<span>1. Optimizing topic modelling & insights generation.[lets see if we can use lighter models or just LSTMS]</span><br>
+<span>2. Adding Login-Logout.</span><br>
+<span>3. Saving the Analysis Results in a Database + coming up with Updation logic [if time gap is large enough].</span><br>
 
 ---
 <!-- 

@@ -13,7 +13,7 @@ cover: "/images/projects/traffic/architecture.png"
 cover_alt: "Placeholder cover image for the example project"
 thumbnail_alt: "Placeholder thumbnail for the example project"
 label: "PROJECT"
-role: "ML Developement and Data Science"
+role: "ML DEVELOPMENT & DATA SCIENCE"
 technologies: [CNN, Computer Vision, Tensorflow, OpenCV, Python ]
 code: "https://github.com/bhavishya112/GoogLeNet-IMAGE-CLASSIFICATION"
 demo: ""
@@ -72,12 +72,12 @@ Then I went on to getting the results.
 
 <!-- Describe the outcome: what changed, what you measured, or what you learned. -->
 MY KEY FINDINGS THROUGH EXPERIMENTATION :<br>
-(1) Too Large Batch size worsens learning<br>
-(2) 1x1 convolutions increase performance[reduced time/step], when they are used inside Inception Layers, and in that specified way.<br>
-(3) Through Dataset augmentation, NN can be made invariant to many things like rotate image, colors, lightings, or many things.<br>
-(4) You increase more filters in the middle layers, so that we get more abstract representations and classification becomes better.<br>
-(5) Keep learning Rate low [but not too much] to keep it easy going [so that it doesn't wobble in the end].<br>
-(6) Increasing Image Dimensions drastically increases computational requirements, i was at 80x80 and the time/step was around 100ms [or so, i don't remember].
+<span>1. Too Large Batch size worsens learning</span><br>
+<span>2. 1x1 convolutions increase performance[reduced time/step], but upto a certain limit only.</span><br>
+<span>3. Through Dataset augmentation, NN can be made invariant to many things like rotate image, colors, lightings, or many things.</span><br>
+<span>4. You increase more filters in the middle layers, so that we get more abstract representations and classification becomes better.</span><br>
+<span>5. Keep learning Rate low [but not too much] to keep it easy going [so that it doesn't wobble in the end].</span><br>
+<span>6. Increasing Image Dimensions drastically increases computational requirements, i was at 80x80 and the time/step was around 100ms [or so, i don't remember].</span>
 
 
 HERE ARE SOME RESULTING METRICS :<br>

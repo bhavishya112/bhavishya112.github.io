@@ -13,7 +13,7 @@ cover: "/images/projects/ecommerce/cover.png"
 cover_alt: "Placeholder cover image for the example project"
 thumbnail_alt: "Placeholder thumbnail for the example project"
 label: "PROJECT"
-role: "AI Agent and FullStack Development"
+role: "AI AGENT & FULLSTACK DEVELOPMENT"
 technologies: [LangChain, Agentic AI, RAG, TAG, HTML-CSS-JS]
 code: "https://github.com/bhavishya112/Ecommerce-Customer-Support-Agent"
 demo: ""
@@ -23,9 +23,9 @@ excerpt: "An AI Agent to be hosted on e-commerce sites to help users find produc
 
 ## Problem
 
-Over time I noticed 2 problems with many Ecommerce Sites.
-1) Users spend a lot of time just to search, filter and know more details of a particular product.
-2) In case the UX of a Site is Bad, user gets frustrated on not being able to find things.
+Over time I noticed 2 problems with many Ecommerce Sites.<br>
+<span>1. Users spend a lot of time just to search, filter and know more details of a particular product.</span><br>
+<span>2. In case the UX of a Site is Bad, user gets frustrated on not being able to find things.</span>
 
 ## Approach
 
@@ -76,8 +76,8 @@ For asking the agent "where is this ui element", it must have access to those ui
 
 **Initially** i thought of **Aria-Labels**, using js (Playwright) why not just retrieve all distinct elements with their Aria-Labels explaining what are they really -> Cache them -> Retrieve through a **RAG pipeline**.
 **But this Approach had some major problems** : <br>
-1. Many elements like div, are not supported by Aria, so you wouldn't be able to find say a kpi card.
-2. Not every website is fully accessible with respect to Aria, which means we'd have to enhance those websites just to make sure our tool works.
+<span>1. Many elements like div, are not supported by Aria, so you wouldn't be able to find say a kpi card.</span><br>
+<span>2. Not every website is fully accessible with respect to Aria, which means we'd have to enhance those websites just to make sure our tool works.</span>
    
 
 **So i thought maybe GraphRAG**???...but i was not sure how would i be able to connect different entities + it would complicate things a lot.
@@ -125,10 +125,10 @@ documents.append(
 but since the project was based on Playwright, and i couldn't think of dynamically clicking different buttons to retrieve differently rendered components, i had to **Compromise** modal components and step-by-step Ajax interactions like Select Product -> Fill Address Details -> Payment -> Order.
 Maybe i'd solve this problem in future releases.
 
-SOME APPROXIMATIONS:
-1. Because we're caching the details once, we can't take ui elements rendered at different desktop/mobile devices, so i took average desktop/mobile resolutions to handle this problem.
-2. Because everyone doesn't know 100s of shades of colors, im approximating all different color shades into 20 different shades. I did that using minimum euclidean distance.
-3. Because it would be irrelevant for user to know "order button is at coordinates (1200px,500px)", i segregated a page into 9 sections - top-left, top-center, top-right, middle-left and so on [based on full html page size, not on your screen size].
+SOME APPROXIMATIONS:<br>
+<span>1. Because we're caching the details once, we can't take ui elements rendered at different desktop/mobile devices, so i took average desktop/mobile resolutions to handle this problem.</span><br>
+<span>2. Because everyone doesn't know 100s of shades of colors, im approximating all different color shades into 20 different shades. I did that using minimum euclidean distance.</span><br>
+<span>3. Because it would be irrelevant for user to know "order button is at coordinates (1200px,500px)", i segregated a page into 9 sections - top-left, top-center, top-right, middle-left and so on [based on full html page size, not on your screen size].</span>
 
 ALTERNATE APPROACH:<br>
 One approach could have been that would be much simpler - just document every webpage into a manual [like many websites do], and embed different sections of that manual into a RAG pipeline to retrieve for later, but the major drawback is its not automated, you'd have to either do it by hand or using some LLM [with human in the loop].
