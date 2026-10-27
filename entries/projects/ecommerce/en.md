@@ -14,7 +14,7 @@ cover_alt: "Placeholder cover image for the example project"
 thumbnail_alt: "Placeholder thumbnail for the example project"
 label: "PROJECT"
 role: "AI AGENT & FULLSTACK DEVELOPMENT"
-technologies: [LangChain, Agentic AI, RAG, TAG, HTML-CSS-JS]
+technologies: [LangChain, LangGraph, LangFuse, RAG, TAG, HTML-CSS-JS]
 code: "https://github.com/bhavishya112/Ecommerce-Customer-Support-Agent"
 demo: ""
 paper: ""
@@ -137,7 +137,20 @@ One approach could have been that would be much simpler - just document every we
 ## Result
 
 <!-- Describe the outcome: what changed, what you measured, or what you learned. -->
+
 The result was a fully-fledged AI Agent through which you can find out whatever the store has to offer you, get your latest order information, know where is a particular element located, or just get latest products knowledge through internet.
+
+The Measurements are as follows (Based on 35 testcases) :<br>
+Argument Correctness : 85% | 
+Groundedness : 81% | 
+Hallucination Rate : 5% | 
+Hallucination Severity : 1.03 (scale 1-5) | 
+Testcase Percentage Passed : 89% (continuous) | 
+Tool Failure Rate : 0% | 
+Tool Selection Accuracy : 66% | 
+Agent Failure Rate : 0% | 
+Tool Latency : p50 - 208ms, p95 - 15.9s | 
+TTFT Agent : p50 - 2.28s, p95 - 16.9s
 
 I learned a lot about Agentic Systems and State Management through this project, starting with a basic chatbot, it has come a lot far, but will go further.
 
